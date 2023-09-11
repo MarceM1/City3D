@@ -136,15 +136,15 @@ function onMouseMove(e) {
 function onDocumentTouchStart(e) {
     if (e.touches.length == 1) {
         e.preventDefault();
-        mouse.x = e.touches[0].pageX - window.innerWidth / 10;
-        mouse.y = e.touches[0].pageY - window.innerHeight / 10;
+        mouse.x = e.touches[0].pageX - window.innerWidth / 1;
+        mouse.y = e.touches[0].pageY - window.innerHeight / 1;
     };
 };
 function onDocumentTouchMove(e) {
     if (e.touches.length == 1) {
         e.preventDefault();
-        mouse.x = e.touches[0].pageX - window.innerWidth / 10;
-        mouse.y = e.touches[0].pageY - window.innerHeight / 10;
+        mouse.x = e.touches[0].pageX - window.innerWidth / 1;
+        mouse.y = e.touches[0].pageY - window.innerHeight / 1;
     };
 };
 
