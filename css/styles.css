@@ -12,7 +12,9 @@ body {
 a {
     text-decoration: none;
     color: white;
+    transition: all .2s;
 }
+
 
 p {
   color: rgba(255, 255, 255, 0.5);
