@@ -25,7 +25,8 @@ var city = new THREE.Object3D();
 var smoke = new THREE.Object3D();
 var town = new THREE.Object3D();
 var createCarPos = true;
-var uSpeed = 0.001;
+// var uSpeed = 0.001;
+var uSpeed = 0.0005;
 
 // FOG Background
 var setcolor = 0x7166D0;
@@ -136,15 +137,15 @@ function onMouseMove(e) {
 function onDocumentTouchStart(e) {
     if (e.touches.length == 1) {
         e.preventDefault();
-        mouse.x = e.touches[0].pageX - window.innerWidth / 2;
-        mouse.y = e.touches[0].pageY - window.innerHeight  / 2;
+        mouse.x = e.touches[0].pageX - window.innerWidth - 0.5;
+        mouse.y = e.touches[0].pageY - window.innerHeight  - 0.5;
     };
 };
 function onDocumentTouchMove(e) {
     if (e.touches.length == 1) {
         e.preventDefault();
-        mouse.x = e.touches[0].pageX - window.innerWidth  / 2;
-        mouse.y = e.touches[0].pageY - window.innerHeight  / 2;
+        mouse.x = e.touches[0].pageX - window.innerWidth  - 0.5;
+        mouse.y = e.touches[0].pageY - window.innerHeight  - 0.5;
     };
 };
 
