@@ -137,17 +137,19 @@ function onMouseMove(e) {
 function onDocumentTouchStart(e) {
     if (e.touches.length == 1) {
         e.preventDefault();
-        mouse.x = e.touches[0].pageX //- window.innerWidth;
-        mouse.y = e.touches[0].pageY //- window.innerHeight;
+        mouse.x = (e.touches[0].pageX / window.innerWidth) * 2 - 1;
+        mouse.y = - (e.touches[0].pageY / window.innerHeight) * 2 + 1;
     };
 };
+
 function onDocumentTouchMove(e) {
     if (e.touches.length == 1) {
         e.preventDefault();
-        mouse.x = e.touches[0].pageX //- window.innerWidth;
-        mouse.y = e.touches[0].pageY //- window.innerHeight;
+        mouse.x = (e.touches[0].pageX / window.innerWidth) * 2 - 1;
+        mouse.y = - (e.touches[0].pageY / window.innerHeight) * 2 + 1;
     };
 };
+
 
 
 window.addEventListener('mousemove', onMouseMove, false);
