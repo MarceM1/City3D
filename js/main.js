@@ -130,8 +130,8 @@ var intersected;
 
 function onMouseMove(e) {
     e.preventDefault();
-    mouse.x = (e.clientX / window.innerWidth) * 0.5;
-    mouse.y = - (e.clientY / window.innerHeight) * 0.5; // 2 + 1
+    mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = - (e.clientY / window.innerHeight) * 2 + 1;
 };
 
 function onDocumentTouchStart(e) {
